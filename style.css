@@ -4,11 +4,10 @@ header {
 }
 
 .container {
-    max-width: 1390px;
+    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
     padding: 0 25px;
-    position: relative;
 }
 
 .container-header {
@@ -16,12 +15,12 @@ header {
     padding: 26px 0;
 }
 
-.container-bot {
+.container-bottom {
     border-bottom: 1px solid #888888;
     padding: 12px 0;
 }
 
-.header-bot {
+.header-bottom {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,7 +37,7 @@ header {
     align-items: center;
 }
 
-.text-logo {
+.logo {
     font-size: 48px;
     line-height: 56.25px;
     font-weight: 700;
@@ -47,21 +46,18 @@ header {
 }
 
 .nav-menu a {
-    border-bottom: solid 1px transparent;
     color: #fff;
     font-size: 24px;
     line-height: 28.13px;
     font-weight: 800;
     margin-right: 40px;
+    text-decoration: none;
 }
 
-.nav-menu a:last-child {
-  margin-right: 0;
+.nav-menu a:hover{
+    text-decoration: underline;
 }
 
-.nav-menu a:nth-child(1) {
-    border-bottom: solid 1px #fff;
-}
 
 .line, .shop {
     font-size: 18px;
@@ -71,9 +67,14 @@ header {
 }
 
 .shop {
-    border-bottom: solid 1px #888888;
+    text-decoration: none;
+}
+.shop:hover {
+    text-decoration: underline;
 }
 
 .line {
     margin-right: 62px;
 }
+
+
