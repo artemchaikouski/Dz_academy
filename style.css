@@ -3,6 +3,14 @@ body{
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 header {
     display: flex;
     flex-flow: column;
@@ -56,13 +64,7 @@ header {
     line-height: 28.13px;
     font-weight: 800;
     margin-right: 40px;
-    text-decoration: none;
 }
-
-.nav-menu a:hover{
-    text-decoration: underline;
-}
-
 
 .line, .shop {
     font-size: 18px;
@@ -71,15 +73,6 @@ header {
     font-weight: 400;
 }
 
-.shop {
-    text-decoration: none;
-}
-.shop:hover {
-    text-decoration: underline;
-}
-
 .line {
     margin-right: 62px;
 }
-
-
