@@ -23,7 +23,6 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
     background:#888;
 }
 
@@ -43,20 +42,48 @@ p{
     padding-left:79px;
 }
 
+.nav-wrapper{
+display: flex;
+align-items: center;
+}
+
 .nav-menu{
 font-size: 24px;
-padding-right: 79px;
 font-weight: 800;
 }
 
 .menu{
-    margin-left: 30px;
+    margin-left: 26px;
     color:#fff;
     text-decoration: none;
 }
 
 .menu:hover{
     text-decoration: underline;
+}
+
+.cart{
+    margin-left: 50px;
+    position: relative;
+    padding-right: 50px;
+}
+
+.cart-inner{
+    display: none;
+    position: absolute;
+    text-align: center;
+    background: #F34141;
+    border-radius: 20px;
+    width: 32px;
+    height: 32px;
+    top: 0;
+    left: 25px;
+}
+
+.number{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 800;
 }
 
 .header-botton{
@@ -80,3 +107,60 @@ border-bottom: 1px solid #888;
 .shop:hover{
     text-decoration: underline;
 }
+
+.section{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.card{
+    display: flex;
+}
+
+.wrapper-card{
+   padding:  97px 0px 16px 252px;
+}
+
+.product{
+    width: 378px;
+    height: 500px;
+    text-align: center;
+    padding-top: 38px;
+    border: 1px solid #888888;
+    border-radius: 30px;
+}
+
+.text-card{
+    margin: 0 auto;
+    width: 286px;
+    height: 83px;
+}
+
+.product p{
+    margin-top: 29px;
+    font-size: 24px;
+    color: #888;
+}
+
+button{
+    background: #888;
+    opacity: 0;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 276px;
+    height: 62px;
+    font-size: 24px;
+    color: #fff;
+    visibility: hidden;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+
+.product:hover button{
+    visibility: visible;
+    opacity: 1;
+    box-shadow: 0px 0px 22px 6px rgba(34, 60, 80, 0.17);
+}
+
