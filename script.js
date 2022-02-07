@@ -1,6 +1,6 @@
-let btn = document.querySelectorAll('.product button');
-let caunter = document.querySelector('.number');
-let wrapNum = document.querySelector('.cart-inner');
+const btn = document.querySelectorAll('.product button');
+const counter = document.querySelector('.number');
+const wrapNum = document.querySelector('.cart-inner');
 
 btn.forEach(function(elem, index){
     console.log(elem, index)
@@ -9,6 +9,6 @@ btn.forEach(function(elem, index){
         if (wrapNum.textContent !== '') {
             wrapNum.style.display = "block";
         }
-        caunter.textContent++
+        counter.textContent++
     })
 })  

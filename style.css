@@ -16,6 +16,7 @@ p{
     width: 100%;
     margin: 0 auto;
     color: #fff;
+    position: relative;
 }
 
 .container{
@@ -24,6 +25,10 @@ p{
     align-items: center;
     justify-content: space-between;
     background:#888;
+}
+
+.header .container.fixed {
+    position: fixed;
 }
 
 .logo-text{
@@ -43,17 +48,17 @@ p{
 }
 
 .nav-wrapper{
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .nav-menu{
-font-size: 24px;
-font-weight: 800;
+    font-size: 24px;
+    font-weight: 800;
 }
 
 .menu{
-    margin-left: 26px;
+    margin-left: 60px;
     color:#fff;
     text-decoration: none;
 }
@@ -87,9 +92,9 @@ font-weight: 800;
 }
 
 .header-botton{
-text-align: center;
-padding: 12px 0;
-border-bottom: 1px solid #888;
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #888;
 }
 
 .line{
@@ -120,7 +125,7 @@ border-bottom: 1px solid #888;
 }
 
 .wrapper-card{
-   padding:  97px 0px 16px 252px;
+    padding:  97px 0px 16px 252px;
 }
 
 .product{
@@ -136,15 +141,16 @@ border-bottom: 1px solid #888;
     margin: 0 auto;
     width: 286px;
     height: 83px;
+    margin-top: 29px;
 }
 
-.product p{
+.product span{
     margin-top: 29px;
     font-size: 24px;
     color: #888;
 }
 
-button{
+.button-cart{
     background: #888;
     opacity: 0;
     border: 1px solid #888;
@@ -158,9 +164,8 @@ button{
     transition: .25s ease-in-out;
 }
 
-.product:hover button{
+.product:hover .button-cart{
     visibility: visible;
     opacity: 1;
     box-shadow: 0px 0px 22px 6px rgba(34, 60, 80, 0.17);
 }
-
