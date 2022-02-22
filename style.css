@@ -177,3 +177,75 @@ p{
     opacity: 1;
     box-shadow: 0px 0px 22px 6px rgba(34, 60, 80, 0.17);
 }
+
+@media screen and (max-width: 475px) {
+    .container {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        height: auto;
+    }
+
+    .nav-menu {
+        flex-flow: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .menu:last-child{
+        margin-bottom: 38px;
+    }
+
+    .container-inner{
+        width: 80%;
+        justify-content: space-around;
+    }
+
+    .logo{
+        padding: 0;
+    }
+
+    .logo-text{
+        margin: 0;
+    }
+
+    .cart{      
+    width: 20%;
+    order: 2;
+    margin: 0;
+    padding: 0;
+    }
+
+    .nav-wrapper{
+        width: 100%;
+        order: 3;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .line{
+        margin: 0 0 15px;
+        display: block;
+    }
+
+    .card{
+        flex-flow: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    .card-two{
+        flex-flow: column;
+        margin: 0;
+        align-items: center;
+    }
+    
+    .product{
+        margin-top: 90px;
+    }
+}
