@@ -1,3 +1,5 @@
+*{box-sizing: border-box;}
+
 body{
     margin: 0;
     padding: 0;
@@ -122,15 +124,20 @@ p{
 
 .card{
     display: flex;
+    justify-content: space-around;
+    margin-top: 85px;
 }
 
-.wrapper-card{
-    padding:  97px 0px 16px 252px;
+.card-two{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 113px;
 }
+
 
 .product{
     width: 378px;
-    height: 500px;
+    height: auto;
     text-align: center;
     padding-top: 38px;
     border: 1px solid #888888;
@@ -162,6 +169,7 @@ p{
     visibility: hidden;
     cursor: pointer;
     transition: .25s ease-in-out;
+    margin-bottom: 33px;
 }
 
 .product:hover .button-cart{
