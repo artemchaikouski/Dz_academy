@@ -111,6 +111,26 @@ p{
     text-decoration: none;
 }
 
+.wrapper-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap;
+    width: 100%;
+}
+
+.wrapper-product {
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper-product:nth-child(1), .wrapper-product:nth-child(2) {
+    margin-bottom: 85px;
+}
+
 .shop:hover{
     text-decoration: underline;
 }
@@ -120,6 +140,7 @@ p{
     width: 100%;
     margin: 0 auto;
     color: #fff;
+    padding: 85px 15px;
 }
 
 .card{
@@ -142,6 +163,8 @@ p{
     padding-top: 38px;
     border: 1px solid #888888;
     border-radius: 30px;
+    font-size: 24px;
+    color: #888;
 }
 
 .text-card{
@@ -149,12 +172,7 @@ p{
     width: 286px;
     height: 83px;
     margin-top: 29px;
-}
-
-.product span{
-    margin-top: 29px;
-    font-size: 24px;
-    color: #888;
+    
 }
 
 .button-cart{
@@ -215,10 +233,10 @@ p{
     }
 
     .cart{      
-    width: 20%;
-    order: 2;
-    margin: 0;
-    padding: 0;
+        width: 20%;
+        order: 2;
+        margin: 0;
+        padding: 0;
     }
 
     .nav-wrapper{
@@ -238,14 +256,22 @@ p{
         margin: 0;
         align-items: center;
     }
-
-    .card-two{
+    
+    .wrapper-section {
         flex-flow: column;
-        margin: 0;
-        align-items: center;
+    }
+
+    .wrapper-product {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .wrapper-product {
+       margin-bottom: 90px;
+    }
+
+    .wrapper-product:last-child {
+        margin-bottom: 0;
     }
     
-    .product{
-        margin-top: 90px;
-    }
 }
