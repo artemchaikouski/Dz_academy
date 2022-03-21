@@ -1,9 +1,6 @@
 async function loadData() {
     const dataFile = await fetch('https://raw.githubusercontent.com/VitaliyPolyashov/classes/master/shop-data/data.json');
     const books = await dataFile.json();
-
-    console.log('Ready');
-    
     
     const root = document.createElement('div');
     root.classList.add('section');
