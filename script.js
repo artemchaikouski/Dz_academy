@@ -1,6 +1,8 @@
 async function loadData() {
     const dataFile = await fetch('https://raw.githubusercontent.com/VitaliyPolyashov/classes/master/shop-data/data.json');
     const books = await dataFile.json();
+
+    console.log('Ready');
     
     
     const root = document.createElement('div');
@@ -57,7 +59,7 @@ async function loadData() {
         wrapNum.style.display = "block";
         counter.textContent = counterlocalStorage;
     } else {
-        console.log('localStorage empty')
+        console.log('localStorage empty');
     }
 }
 
